@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".TextviewActivity" />
+        <activity android:name=".EdittextActivity" />
+        <activity android:name=".ButtonActivity" />
+        <activity android:name=".ImagebuttonActivity" />
+        <activity android:name=".ImageviewActivity" />
+        <activity android:name=".RadiobuttonActivity" />
+        <activity android:name=".CheckboxActivity"></activity>
     </application>
 
 </manifest>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">UIList1</string>
+    <string name="textview">textview</string>
+    <string name="edittext">edittext</string>
+    <string name="button">button</string>
+    <string name="imageview">imageview</string>
+    <string name="radiobutton">radiobutton</string>
+    <string name="checkbox">checkbox</string>
+    <string name="textview_ordinary">普通的textview</string>
+    <string name="textview_shadow">有阴影的textview</string>
+    <string name="textview_frame">带边框的textview</string>
+    <string name="textview_fillet">圆角边框的textview</string>
 </resources>
