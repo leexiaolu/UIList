@@ -6,4 +6,31 @@
     android:layout_height="match_parent"
     tools:context="com.example.leesnriud.uilist1.EdittextActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:hint="默认提示文字"
+            android:textColorHint="#95A1AA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:hint="selectAllOnFocus"
+            android:selectAllOnFocus="true"
+            android:textColorHint="#FF4343"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="输入类型为密码"
+            android:selectAllOnFocus="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.example.leesnriud.uilist1.EditTextWithDel
+            android:id="@+id/et_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>
