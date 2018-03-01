@@ -9,10 +9,12 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <com.example.leesnriud.uilist1.MyButton
             android:background="@color/bottom_bg"
             android:scaleType="center"
             android:layout_width="match_parent"
             android:layout_height="50dp" />
+
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>

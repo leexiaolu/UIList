@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context="com.example.leesnriud.uilist1.ImageviewActivity">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:background="@mipmap/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/game"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:src="@mipmap/game"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/game_bg"/>
+    </LinearLayout>
 </android.support.constraint.ConstraintLayout>

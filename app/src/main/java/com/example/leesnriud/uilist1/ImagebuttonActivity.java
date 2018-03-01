@@ -3,6 +3,10 @@ package com.example.leesnriud.uilist1;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * android imagebutton
+ *
+ */
 public class ImagebuttonActivity extends AppCompatActivity {
 
     @Override
