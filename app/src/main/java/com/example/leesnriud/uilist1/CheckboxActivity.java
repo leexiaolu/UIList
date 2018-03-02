@@ -3,6 +3,10 @@ package com.example.leesnriud.uilist1;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+/**
+ * android checkbox
+ *
+ */
 public class CheckboxActivity extends AppCompatActivity {
 
     @Override
