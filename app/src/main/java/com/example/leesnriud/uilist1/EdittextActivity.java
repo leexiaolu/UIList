@@ -2,9 +2,19 @@ package com.example.leesnriud.uilist1;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
+import android.text.method.HideReturnsTransformationMethod;
+import android.text.method.PasswordTransformationMethod;
+import android.util.Log;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 /**
  * android edittext
@@ -33,10 +43,55 @@ import butterknife.ButterKnife;
  */
 public class EdittextActivity extends AppCompatActivity {
 
+    private boolean flag = false;
+
+    @BindView(R.id.et_edittext)
+    EditText etEdittext;
+    @BindView(R.id.tv_edittext)
+    TextView tvEdittext;
+    @BindView(R.id.et_pass)
+    EditText etPass;
+    @BindView(R.id.bt_pass)
+    Button btPass;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edittext);
+        ButterKnife.bind(this);
+
+        etEdittext.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                Log.e("111", "111");
+            }
+
+            @Override
+            public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
+                Log.e("111", "222");
+            }
+
+            @Override
+            public void afterTextChanged(Editable editable) {
+                tvEdittext.setText(etEdittext.getText());
+            }
+        });
     }
 
+    @OnClick(R.id.bt_pass)
+    public void onViewClicked() {
+        if(etPass.getText().length() < 1){
+            Toast.makeText(EdittextActivity.this,"请先输入密码",Toast.LENGTH_SHORT).show();
+        }else{
+            if(flag){
+                etPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                flag = false;
+                btPass.setText("不可见");
+            }else{
+                etPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                flag = true;
+                btPass.setText("可见");
+            }
+        }
+    }
 }
